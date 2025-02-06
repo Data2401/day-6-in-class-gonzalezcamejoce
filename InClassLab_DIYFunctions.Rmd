@@ -16,15 +16,23 @@ The questions from your notes today are below, please copy your answers them her
 1. Write your own function that takes the temperature in Fahrenheit as an argument and returns the Celcius equivalent. 
 
 ```{R}
+convert <- function(faren) {
+ celc <- (faren - 32) * (5/9)
+  return(celc)
+}
 
-
+convert(212)
 ```
 
 2. Expand that function so that it takes a temperature in Fahrenheit and a distance in feet and returns **both** the temperature in Celcius and the distance in meters (you'll likely need to remember the `c()` function!)
 
 
 ```{r}
-
+convertboth <- function(fare, feet) {
+  celc <- (faren - 32) * (5/9)
+  meters <- feet * 0.3048
+  return(c(celc, meters))
+}
 
 ```
 
